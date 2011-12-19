@@ -1,0 +1,97 @@
+.sc-player {
+	background-color: transparent;
+	color: #888888;
+	font-size: 0.6em;
+	font-weight: bold;
+}
+
+.sc-player a {
+	text-decoration: none;
+	color: #888888;
+}
+
+/* Artworks */
+
+.sc-player .sc-artwork-list{
+	background-color: transparent;
+	color: #000000;
+}
+
+/* scrubber */
+
+.sc-scrubber {
+	background-color: transparent;
+	border-radius: 2px;
+}
+
+.sc-scrubber .sc-time-span {
+	background-color: transparent;
+}
+
+.sc-volume-slider {
+	background-color: #888888;
+	border: 1px solid #333333;
+	border-radius: 2px;
+}
+
+.sc-volume-slider .sc-volume-status{
+  background-color: #5dc0de;
+  border-right: 1px solid #333333;
+}
+
+.sc-scrubber .sc-waveform-container {
+  z-index: 800;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+
+.sc-scrubber .sc-time-span img {
+  height: 30px;
+  width: 100%;
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played {
+  background-color: #333333;
+  z-index: 1;
+  position: absolute;
+}
+
+.sc-scrubber .sc-played {
+  background-color: #5dc0de;
+  z-index: 799;
+}
+
+/* controls */
+
+.sc-player .sc-controls a {
+  background: url('../images/play-blue.png');
+}
+
+.sc-player .sc-controls a:hover {
+  background: url('../images/play-blue-hover.png');
+}
+
+.sc-player .sc-controls a.sc-pause {
+  background: url('../images/play-blue.png');
+}
+
+.sc-player .sc-controls a.sc-pause:hover{
+  background: url('../images/play-blue-hover.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause{
+  background: url('../images/pause-blue.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause:hover{
+  background: url('../images/pause-blue-hover.png');
+}  
+
+.sc-scrubber .sc-time-indicators{
+  background: #5dc0de;
+  color: #333333;;
+  border-radius: 4px;
+  padding: 4px;
+}
+

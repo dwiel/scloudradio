@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml" > 
+
+<head> 
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<title>sCloudRadio</title>
+	
+	<meta name="keywords" content="scloudradio, soundcloud, soundcloud radio, last.fm, last.fm soundcloud, last.fm soundcloud radio, last.fm like soundcloud radio, soundcloud personalised radio, soundcloud on-demand radio, soundcloud related artists radio" /> 
+	<meta name="description" content="a free soundcloud based personalised radio using last.fm's related artists." /> 
+	
+	<!-- facebook meta tags -->
+	<meta property="fb:admins" content="100000698054539" />
+	<meta property="og:site_name" content="sCloudRadio"/> 
+	<meta property="og:title" content="sCloudRadio" />
+	<meta property="og:description" content="a soundcloud personalised radio" /> 
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.scloudradio.com" />
+	<meta property="og:image" content="http://www.scloudradio.com/images/scloudradio-image.png" />
+	<!-- end facebook meta tags -->
+	
+	<link rel="shortcut icon" href="images/scloudradio-favicon.png" />
+	<link rel="stylesheet" href="css/soundcloud-structure.css" type="text/css" />
+	<link rel="stylesheet" href="css/soundcloud-colours.css" type="text/css" />
+	<link rel="stylesheet" href="css/scloudradio.css" type="text/css" />
+	<script type="text/javascript" src="script/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="script/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="script/jshashtable-2.1.js"></script>
+	<script type="text/javascript" src="script/soundcloud.player.api.js"></script>
+	<script type="text/javascript" src="script/sc-player.js"></script>
+	
+ </head>
+ <body>
+	
+	<div id="header">
+		<a href="http://www.scloudradio.com" title="sCloudRadio">sCloudRadio</a>
+		<span class="beta">beta</span>
+	</div>
+	<div id="content">
+		<div id="welcome-panel">
+			<div id="radio-error"></div>	
+			<div id="artist-div">
+				<form id="artist-form" action="#"> 
+					<input type="text" id="artist-input" />
+				</form>
+			</div>
+			<div id="soundcloud">
+				tunes &amp; player by
+				<a href="http://www.soundcloud.com" title="soundcloud.com" target="_blank">
+					<img src="images/soundcloud_black.png" alt="soundcloud logo" />
+				</a>
+			</div>
+			<div id="lastfm">
+				similar artist by
+				<a href="http://www.last.fm" title="last.fm" target="_blank">
+					<img src="images/lastfm_grey.gif" alt="last.fm logo" />
+				</a>
+			</div>
+		</div>
+		<div id="radio-panel">
+			<div id="radio-container"></div>
+			<div id="radio-header"></div>
+			<div id="skip"><a href="#skip" title="skip tune">skip</a></div>
+			<div id="stop"><a href="#stop" title="stop radio">stop</a></div>
+			<div id="current-track"></div>
+			<div id="loading"></div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<a id="about" href="#about" title="about">about</a> 
+		//
+		<a id="contact" href="#contact" title="contact">contact</a>  
+		<div id="facebook">
+			
+		<!--  facebook button -->
+		<iframe src="http://www.facebook.com/plugins/like.php?app_id=258253567528310&amp;href=www.scloudradio.com&amp;send=false&amp;layout=button_count&amp;width=95&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=22" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:95px; height:22px; background-color: transparent;"></iframe>
+			<!-- end facebook button -->
+		</div>
+		
+		<div id="twitter">
+			<!-- twitter button -->
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.scloudradio.com" data-text="Addicted to that massive soundcloud app, free personalised radio. Check it out!" data-count="horizontal">tweet</a>
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<!-- end twitter button -->
+		</div>
+		
+		<!-- paypal button -->
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="paypal">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="GYMPPWSMGVHGU">
+			<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+			<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+		<!-- end paypal button -->
+		
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript" src="script/scloudradio.js"></script>
+	<!-- google analytics -->
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-25483113-1']);
+	  	_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+
+</body>
+</html>
+
